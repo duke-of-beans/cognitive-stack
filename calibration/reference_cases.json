@@ -1,0 +1,118 @@
+{
+  "version": "1.0.0",
+  "description": "TREG Calibration Dataset — Reference cases for epistemic pattern matching",
+  "categories": {
+    "vindicated_after_suppression": "Researchers/ideas suppressed by institutional consensus and later vindicated",
+    "correctly_rejected": "Claims that mainstream science correctly identified as wrong",
+    "suppressed_ambiguous": "Suppressed ideas with genuine but unresolved evidence",
+    "institutional_capture_documented": "Cases where institutional incentives distorted scientific consensus",
+    "currently_contested": "Active disputes where institutional dynamics may influence evaluation"
+  },
+  "cases": [
+    {
+      "id": "cal-001", "category": "vindicated_after_suppression",
+      "name": "Semmelweis — Handwashing", "era": "1847-1865",
+      "summary": "Demonstrated handwashing reduced maternal mortality from 18% to 1%. Rejected by medical establishment. Died in asylum. Vindicated by germ theory.",
+      "pattern": "Empirical evidence dismissed because mechanism unknown. Institutional pride over patient outcomes.",
+      "signal_markers": ["disproportionate_response", "ad_hominem_dismissal", "evidence_precedes_theory"]
+    },
+    {
+      "id": "cal-002", "category": "vindicated_after_suppression",
+      "name": "Marshall — H. pylori", "era": "1982-2005",
+      "summary": "Proved ulcers caused by bacteria, not stress. Self-experimented. Ridiculed for years. Nobel Prize 2005.",
+      "pattern": "Challenged profitable treatment paradigm. Self-experimentation as last resort.",
+      "signal_markers": ["threatens_treatment_revenue", "self_experimentation", "replicated_globally"]
+    },
+    {
+      "id": "cal-003", "category": "vindicated_after_suppression",
+      "name": "Wegener — Continental Drift", "era": "1912-1960s",
+      "summary": "Proposed continental drift. Rejected 50 years. Vindicated by plate tectonics.",
+      "pattern": "Outsider to discipline. Evidence strong but mechanism unknown.",
+      "signal_markers": ["outsider_credentials_dismissed", "evidence_precedes_theory", "long_vindication_lag"]
+    },
+    {
+      "id": "cal-004", "category": "vindicated_after_suppression",
+      "name": "Bretz — Channeled Scablands", "era": "1923-1960s",
+      "summary": "Proposed catastrophic flooding carved Eastern Washington. Uniformitarianism orthodoxy resisted 40 years.",
+      "pattern": "Paradigm conflict. Field evidence clear but contradicted dominant philosophy.",
+      "signal_markers": ["paradigm_violation", "field_evidence_dismissed", "long_vindication_lag"]
+    },
+    {
+      "id": "cal-005", "category": "vindicated_after_suppression",
+      "name": "Nordenström — Bioelectric Medicine", "era": "1960s-1990s",
+      "summary": "Documented bioelectric circuits in the body. Published by major press but ignored by establishment.",
+      "pattern": "Credentialed researcher, published evidence, framework too revolutionary.",
+      "signal_markers": ["credentialed_researcher_ignored", "published_but_uncited", "framework_too_large"]
+    },
+    {
+      "id": "cal-006", "category": "correctly_rejected",
+      "name": "N-rays", "era": "1903-1906",
+      "summary": "René Blondlot claimed N-rays. Replication failed. Exposed as observer bias by Robert Wood.",
+      "pattern": "Initial excitement, replication failure, decisive debunking experiment.",
+      "signal_markers": ["replication_failure", "observer_bias", "decisive_negative_experiment"]
+    },
+    {
+      "id": "cal-007", "category": "correctly_rejected",
+      "name": "Polywater", "era": "1962-1973",
+      "summary": "Claimed anomalous water form. Thousands of papers. Shown to be contaminated samples.",
+      "pattern": "Cascade of confirmation without adequate controls. Mundane explanation found.",
+      "signal_markers": ["cascade_without_controls", "mundane_explanation_found", "retracted_by_community"]
+    },
+    {
+      "id": "cal-008", "category": "correctly_rejected",
+      "name": "Lysenko — Vernalization", "era": "1927-1964",
+      "summary": "Rejected Mendelian genetics for ideological reasons. State enforcement. Set Soviet biology back decades.",
+      "pattern": "Political enforcement of incorrect science. No independent replication.",
+      "signal_markers": ["state_enforcement", "no_independent_replication", "ideological_motivation"]
+    },
+    {
+      "id": "cal-009", "category": "suppressed_ambiguous",
+      "name": "Reich — Orgone/Biofields", "era": "1930s-1957",
+      "summary": "Proposed orgone energy. FDA burned books. Early work credible, late work extraordinary. Modern biofield research echoes core claims.",
+      "pattern": "Credentialed early career, escalating claims, government material destruction, modern echoes.",
+      "signal_markers": ["government_material_destruction", "escalating_claims", "modern_echoes", "credentialed_early_career"]
+    },
+    {
+      "id": "cal-010", "category": "suppressed_ambiguous",
+      "name": "Rife — Frequency Therapy", "era": "1930s-1950s",
+      "summary": "Claimed frequency device destroyed pathogens. AMA opposition. Equipment confiscated. TTFields show frequency approaches have merit.",
+      "pattern": "Institutional opposition. Equipment destruction. Partial modern vindication via different mechanism.",
+      "signal_markers": ["equipment_confiscated", "ama_opposition", "partial_modern_vindication"]
+    },
+    {
+      "id": "cal-011", "category": "institutional_capture_documented",
+      "name": "Tobacco — Cancer Denial", "era": "1950s-1990s",
+      "summary": "Funded doubt about smoking-cancer link for decades. Internal memos showed they knew.",
+      "pattern": "Manufactured doubt. Internal knowledge contradicting public position.",
+      "signal_markers": ["manufactured_doubt", "internal_contradictions", "funded_counter_research"]
+    },
+    {
+      "id": "cal-012", "category": "institutional_capture_documented",
+      "name": "Sugar Industry — Fat Blame", "era": "1960s-2016",
+      "summary": "Funded Harvard researchers to blame fat not sugar for heart disease. Shaped dietary guidelines for decades.",
+      "pattern": "Funded research with predetermined conclusions. Shaped policy.",
+      "signal_markers": ["funded_predetermined_conclusions", "shaped_policy", "internal_documents_revealed"]
+    },
+    {
+      "id": "cal-013", "category": "institutional_capture_documented",
+      "name": "Pharma Revolving Door", "era": "Ongoing",
+      "summary": "FDA officials move to industry positions. Approval incentives aligned with industry over patients.",
+      "pattern": "Structural incentive misalignment. Regulatory capture via career paths.",
+      "signal_markers": ["revolving_door", "structural_incentives", "regulatory_capture"]
+    },
+    {
+      "id": "cal-014", "category": "currently_contested",
+      "name": "UAP/Non-Human Intelligence", "era": "1947-present",
+      "summary": "Decades of ridicule then 2017 NYT revelations, AARO, congressional hearings, PURSUE Act 2026.",
+      "pattern": "Institutional ridicule then forced disclosure. Signal quality improving.",
+      "signal_markers": ["ridicule_then_reversal", "forced_disclosure", "improving_signal_quality"]
+    },
+    {
+      "id": "cal-015", "category": "currently_contested",
+      "name": "Consciousness as Fundamental", "era": "Ongoing",
+      "summary": "IIT, GWT, and alternatives suggest consciousness may be fundamental. HIRM proposes multiplicative integration.",
+      "pattern": "Paradigm challenge to physicalist assumptions. Mathematical frameworks exist.",
+      "signal_markers": ["paradigm_challenge", "mathematical_framework_exists", "measurement_difficulty"]
+    }
+  ]
+}
