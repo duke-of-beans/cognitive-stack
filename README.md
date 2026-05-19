@@ -1,12 +1,12 @@
 # Cognitive Stack
 
-### A nine-system cognitive architecture that gives stateless LLMs persistent memory, self-maintenance, adversarial reasoning, and autonomous growth.
+### A ten-system cognitive architecture that gives stateless LLMs persistent memory, self-maintenance, adversarial reasoning, autonomous growth, and build verification.
 
 No fine-tuning. No model modifications. Pure infrastructure built on Claude + MCP.
 
 ---
 
-**66k+ observations** · **7,500+ graph edges** · **88% recall benchmark** · **13 autonomous maintenance passes** · **9 named cognitive systems**
+**66k+ observations** · **7,500+ graph edges** · **88% recall benchmark** · **13 autonomous maintenance passes** · **10 named cognitive systems** · **133 security tests**
 
 ---
 
@@ -14,11 +14,11 @@ No fine-tuning. No model modifications. Pure infrastructure built on Claude + MC
 
 Claude has no memory between conversations. Every session starts from zero.
 
-This project builds a complete cognitive architecture around that constraint — not just memory, but the full set of systems a mind needs: recall, maintenance, self-evaluation, adversarial testing, curiosity, growth drive, and epistemic immunity. Nine named subsystems that form one integrated organism.
+This project builds a complete cognitive architecture around that constraint — not just memory, but the full set of systems a mind needs: recall, maintenance, self-evaluation, adversarial testing, curiosity, growth drive, epistemic immunity, and build verification. Ten named subsystems that form one integrated organism.
 
 The system has been in daily production use since March 2026 across a 38-project portfolio.
 
-## The Nine Systems
+## The Ten Systems
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -28,7 +28,7 @@ The system has been in daily production use since March 2026 across a 38-project
 │  │   LOOM    │  Depth from parallax — not sequential filtering.    │
 │  │  (field)  │  Seven cognitive operations running in parallel.    │
 │  └─────┬─────┘                                                     │
-│        │ integrates signals from all eight systems:                 │
+│        │ integrates signals from all nine systems:                  │
 │  ┌─────┴──────────────────────────────────────────────────────┐    │
 │  │                                                             │    │
 │  │  LANTERN      curiosity — autonomous research               │    │
@@ -39,6 +39,7 @@ The system has been in daily production use since March 2026 across a 38-project
 │  │  brain.db     memory — 1,500+ unique active observations     │    │
 │  │  NIGHTSHIFT   maintenance — 13 autonomous passes             │    │
 │  │  TESSRYX      dependency intelligence — provenance tracking  │    │
+│  │  YUMA         verification — testing, health scores, gates   │    │
 │  │                                                             │    │
 │  └─────────────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────────────┘
@@ -55,6 +56,7 @@ The system has been in daily production use since March 2026 across a 38-project
 | **brain.db** | Memory. RRF hybrid retrieval, ACT-R decay, SHA-256 dedup, retrieval tracking, structural isomorphism edges. | SQLite + sqlite-vec + FTS5, KERNL MCP tools |
 | **NIGHTSHIFT** | Autonomous maintenance. 13 passes including co-occurrence, ACT-R decay, anti-Hebbian pruning, structural isomorphism, epistemic scanning, synthesis, self-improvement. | Node.js, runs daily via Task Scheduler |
 | **TESSRYX** | Dependency intelligence. Provenance, supersession, blast radius, conflict detection across both research claims and cognitive reasoning. | Standalone engine with 5 core modules |
+| **YUMA** | Build verification. AI-native testing with health scores, commit gates, mutation testing, staged versioning. "If it survives Yuma, it survives anything." | KERNL MCP tools (19), WHETSTONE code mode, NIGHTSHIFT enrichment |
 
 ## Measured Results
 
@@ -72,6 +74,10 @@ These are production numbers, not benchmarks on synthetic data.
 | Daily maintenance | **~13 min** | Runs at logon via Task Scheduler with StartWhenAvailable |
 | Embedding model | **nomic-embed-text** | Local via Ollama, zero API cost |
 | Production uptime | **Since March 2026** | Daily use across 38-project portfolio |
+| Yuma test specs | **36** | Across KERNL (30), SHIM (3), VIGIL (3) |
+| COVOS security tests | **133** | Middleware, CSRF, rate-limit, AI-security — all passing |
+| WHETSTONE mutations analyzed | **22** | Across 4 security-critical files, 3 real findings surfaced |
+| Health score formula | **Readiness = Features × 0.6 + Yuma × 0.4** | Projects can't be GREEN without test coverage |
 
 ## How It Works (Technical)
 
@@ -123,7 +129,7 @@ Every session reconstructs full operational context through a hierarchical boots
 4. Load project-specific DNA and continuation state
 5. Verify build passes before work begins
 
-**10 MCP tools** exposed to Claude:
+**29 MCP tools** exposed to Claude:
 
 | Tool | Purpose |
 |------|---------|
@@ -133,10 +139,19 @@ Every session reconstructs full operational context through a hierarchical boots
 | `brain_remember` | Write observations with auto-embedding + SHA-256 dedup |
 | `brain_status` | Entity details + recent observations + latest signal |
 | `brain_feedback` | Rate recall quality — drives reinforcement learning on edges |
-| `whetstone_challenge` | Adversarial testing — heterogeneous counterarguments via API |
+| `whetstone_challenge` | Adversarial testing — counterarguments (epistemic) or mutation testing (code mode) |
 | `imprint_reflect` | Post-session reflection — typed deltas ΔS/ΔU/ΔT |
 | `continuity_checkpoint` | Session state persistence with signal extraction |
 | `continuity_recover_crash` | Crash detection and context recovery |
+| `test_define` | Register a test spec (tier + type + definition) |
+| `test_run` | Execute tests with structured results + health score |
+| `test_health` | Yuma health score + project readiness |
+| `test_generate` | AI-powered unit test generation via Anthropic API |
+| `test_chain` | Multi-step E2E workflow testing |
+| `test_precommit` | Smoke + contract gate for commits |
+| `smart_commit` | Git commit with build + Yuma test gates |
+| `dev_branch` | Staged versioning — create/switch dev branches |
+| `merge_to_main` | Yuma-gated merge to main |
 
 ### Epistemic Layer (TREG)
 
@@ -223,7 +238,7 @@ This repository contains the architecture specification and documentation. The i
 |-----------|------|------|
 | **Architecture spec** | **This repo** | Master spec, calibration dataset, bootstrap patterns |
 | brain.db + brain-mcp | [Brain.db](https://github.com/duke-of-beans/Brain.db) | Memory store + 10 MCP recall/write tools |
-| KERNL | [KERNL](https://github.com/duke-of-beans/KERNL) | Workspace intelligence, WHETSTONE + IMPRINT tools |
+| KERNL | [KERNL](https://github.com/duke-of-beans/KERNL) | Workspace intelligence, WHETSTONE + IMPRINT + YUMA tools |
 | CONTINUITY | [CONTINUITY](https://github.com/duke-of-beans/CONTINUITY) | Session persistence + signal extraction |
 | TESSRYX | [TESSRYX](https://github.com/duke-of-beans/TESSRYX) | Dependency intelligence engine |
 | SHIM | [SHIM](https://github.com/duke-of-beans/SHIM) | Code evolution + quality analysis |
@@ -238,7 +253,8 @@ cognitive-stack/
 ├── calibration/
 │   └── reference_cases.json               # TREG epistemic calibration dataset (15 cases)
 └── docs/
-    └── NIGHTSHIFT.md                      # NIGHTSHIFT v3.0 pass documentation
+    ├── NIGHTSHIFT.md                      # NIGHTSHIFT v3.0 pass documentation
+    └── YUMA.md                            # YUMA testing & verification subsystem
 ```
 
 ---
