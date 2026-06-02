@@ -6,7 +6,7 @@ No fine-tuning. No model modifications. Pure infrastructure built on Claude + MC
 
 ---
 
-**66k+ observations** · **7,500+ graph edges** · **88% recall benchmark** · **13 autonomous maintenance passes** · **10 named cognitive systems** · **133 security tests**
+**~2,600 curated observations** · **7,500+ graph edges** · **88% recall benchmark** · **13 autonomous maintenance passes** · **10 named cognitive systems** · **133 security tests**
 
 ---
 
@@ -65,7 +65,7 @@ These are production numbers, not benchmarks on synthetic data.
 | Metric | Value | Notes |
 |--------|-------|-------|
 | Recall@5 benchmark | **88.0%** | 50-query gold set across 4 domains (dev, consciousness, personal, business) |
-| Active observations | **1,537** | After SHA-256 dedup removed 64,989 duplicates (97.7% noise reduction) |
+| Active observations | **~2,645** | After SHA-256 dedup + greglite_scan purge (97%+ noise reduction, 2026-05-29) |
 | Graph edges | **7,563** | Including 221 structural isomorphism edges (auto-detected) |
 | Active entities | **280** | Projects, people, concepts, decisions |
 | Retrieval method | **RRF** | Reciprocal Rank Fusion (k=60) replacing weighted average |
@@ -129,7 +129,7 @@ Every session reconstructs full operational context through a hierarchical boots
 4. Load project-specific DNA and continuation state
 5. Verify build passes before work begins
 
-**29 MCP tools** exposed to Claude:
+**128 MCP tools** exposed to Claude (full list in KERNL repo):
 
 | Tool | Purpose |
 |------|---------|
@@ -240,9 +240,9 @@ This repository contains the architecture specification and documentation. The i
 | brain.db + brain-mcp | [Brain.db](https://github.com/duke-of-beans/Brain.db) | Memory store + 10 MCP recall/write tools |
 | KERNL | [KERNL](https://github.com/duke-of-beans/KERNL) | Workspace intelligence, WHETSTONE + IMPRINT + YUMA tools |
 | CONTINUITY | [CONTINUITY](https://github.com/duke-of-beans/CONTINUITY) | Session persistence + signal extraction |
-| TESSRYX | [TESSRYX](https://github.com/duke-of-beans/TESSRYX) | Dependency intelligence engine |
+| TESSRYX | *(private — Silent Ampersand IP)* | Dependency intelligence engine |
 | SHIM | [SHIM](https://github.com/duke-of-beans/SHIM) | Code evolution + quality analysis |
-| Oktyv | [oktyv](https://github.com/duke-of-beans/oktyv) | 9-engine automation layer |
+| Oktyv | [oktyv](https://github.com/duke-of-beans/oktyv) | 10-engine, 73-tool automation layer |
 
 ### Files in This Repo
 
