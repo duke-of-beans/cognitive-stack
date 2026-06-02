@@ -243,6 +243,15 @@ This repository contains the architecture specification and documentation. The i
 | TESSRYX | *(private — Silent Ampersand IP)* | Dependency intelligence engine |
 | SHIM | [SHIM](https://github.com/duke-of-beans/SHIM) | Code evolution + quality analysis |
 | Oktyv | [oktyv](https://github.com/duke-of-beans/oktyv) | 10-engine, 73-tool automation layer |
+| Assertion Router | [assertion-router](https://github.com/duke-of-beans/assertion-router) | 4-mode confidence routing (spec + reference impl) |
+| Composite Confidence Score | [composite-confidence-score](https://github.com/duke-of-beans/composite-confidence-score) | 7-axis weighted confidence function |
+| Tribunal | [tribunal](https://github.com/duke-of-beans/tribunal) | Multi-perspective deliberation protocol |
+| Homeostasis | [homeostasis](https://github.com/duke-of-beans/homeostasis) | Operational mode state machine |
+| ORACLE Router | [oracle-router](https://github.com/duke-of-beans/oracle-router) | Entropy-minimizing action dispatch |
+| Veto Authority | [veto-authority](https://github.com/duke-of-beans/veto-authority) | Quality-floor veto with temporal decay |
+| Signal Diversity | [signal-diversity](https://github.com/duke-of-beans/signal-diversity) | Novelty injection + outlier preservation |
+| NIGHTSHIFT | [nightshift](https://github.com/duke-of-beans/nightshift) | 13-pass autonomous memory maintenance |
+| DAP | [DAP](https://github.com/duke-of-beans/DAP) | Deliberative Assembly Protocol |
 
 ### Files in This Repo
 
