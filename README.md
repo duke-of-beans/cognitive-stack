@@ -1,12 +1,12 @@
 # Cognitive Stack
 
-### A ten-system cognitive architecture that gives stateless LLMs persistent memory, self-maintenance, adversarial reasoning, autonomous growth, and build verification.
+### An eleven-system cognitive architecture that gives stateless LLMs persistent memory, self-maintenance, adversarial reasoning, autonomous growth, and build verification.
 
 No fine-tuning. No model modifications. Pure infrastructure built on Claude + MCP.
 
 ---
 
-**~2,600 curated observations** · **7,500+ graph edges** · **88% recall benchmark** · **13 autonomous maintenance passes** · **10 named cognitive systems** · **133 security tests**
+**~2,600 curated observations** · **7,500+ graph edges** · **88% recall benchmark** · **13 autonomous maintenance passes** · **11 named cognitive systems** · **133 security tests**
 
 ---
 
@@ -40,6 +40,7 @@ The system has been in daily production use since March 2026 across a 38-project
 │  │  NIGHTSHIFT   maintenance — 13 autonomous passes             │    │
 │  │  TESSRYX      dependency intelligence — provenance tracking  │    │
 │  │  YUMA         verification — testing, health scores, gates   │    │
+│  │  AUTONOMIC    execution — autonomous sprint protocol + gates │    │
 │  │                                                             │    │
 │  └─────────────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────────────┘
@@ -57,6 +58,7 @@ The system has been in daily production use since March 2026 across a 38-project
 | **NIGHTSHIFT** | Autonomous maintenance. 13 passes including co-occurrence, ACT-R decay, anti-Hebbian pruning, structural isomorphism, epistemic scanning, synthesis, self-improvement. | Node.js, runs daily via Task Scheduler |
 | **TESSRYX** | Dependency intelligence. Provenance, supersession, blast radius, conflict detection across both research claims and cognitive reasoning. | Standalone engine with 5 core modules |
 | **YUMA** | Build verification. AI-native testing with health scores, commit gates, mutation testing, staged versioning. "If it survives Yuma, it survives anything." | KERNL MCP tools (19), WHETSTONE code mode, NIGHTSHIFT enrichment |
+| **AUTONOMIC** | Autonomous sprint execution. Protocol, CLI, and plugin for AI agents. 4-gate quality system (pre-flight → execution → validation → learning loop), tiered execution (Tier 1 fully autonomous, Tier 2 with decision gates), structured abort contract with pattern learning. | [Standalone repo](https://github.com/duke-of-beans/autonomic), KERNL enhanced backends |
 
 ## Measured Results
 
@@ -251,6 +253,7 @@ This repository contains the architecture specification and documentation. The i
 | Veto Authority | [veto-authority](https://github.com/duke-of-beans/veto-authority) | Quality-floor veto with temporal decay |
 | Signal Diversity | [signal-diversity](https://github.com/duke-of-beans/signal-diversity) | Novelty injection + outlier preservation |
 | NIGHTSHIFT | [nightshift](https://github.com/duke-of-beans/nightshift) | 13-pass autonomous memory maintenance |
+| AUTONOMIC | [autonomic](https://github.com/duke-of-beans/autonomic) | Autonomous sprint execution protocol, CLI, and plugin |
 | DAP | [DAP](https://github.com/duke-of-beans/DAP) | Deliberative Assembly Protocol |
 
 ### Files in This Repo
