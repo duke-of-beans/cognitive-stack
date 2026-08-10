@@ -157,13 +157,7 @@ Every session reconstructs full operational context through a hierarchical boots
 
 ### Epistemic Layer (TREG)
 
-A calibration dataset of 15 reference cases across 5 categories trains the system's epistemic discrimination:
-
-- **Vindicated after suppression** — Semmelweis, Marshall (H. pylori), Wegener, Bretz, Nordenström
-- **Correctly rejected** — N-rays, Polywater, Lysenko
-- **Suppressed but ambiguous** — Reich (orgone/biofields), Rife (frequency therapy)
-- **Institutional capture documented** — Tobacco/cancer denial, Sugar/fat blame, Pharma revolving door
-- **Currently contested** — UAP/NHI, Consciousness as fundamental
+A calibration dataset trains the system's epistemic discrimination against five categories: claims later vindicated after being dismissed, claims correctly rejected by mainstream review, genuinely ambiguous suppressed ideas, documented cases of institutional-incentive-driven consensus, and currently-contested claims. The dataset itself — specific cases and verdicts — is not published; the framework and its guardrails against overcorrection are what matter here, not a list of contested positions.
 
 Used by WHETSTONE (when `calibration=true`) and NIGHTSHIFT Pass 11 for pattern matching against new claims.
 
